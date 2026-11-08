@@ -1,0 +1,58 @@
+IPOs in dataset with prices: 62
+IPOs with 6+ months of history: 61
+Of those, with institutional oversubscription: 60
+
+== Whole sample, median return vs offer price ==
+  day1: median +15.0% (n=61), share above offer 80%, median vs TASI +15.7%
+    3m: median +14.1% (n=59), share above offer 66%, median vs TASI +17.2%
+    6m: median +22.6% (n=61), share above offer 66%, median vs TASI +18.4%
+    1y: median +13.7% (n=57), share above offer 65%, median vs TASI +14.6%
+
+== By institutional oversubscription (equal-size thirds) ==
+  Low    1x-63x (n=20): day1 +6.1% | 3m +12.4% | 6m +16.0% | 6m vs TASI +17.6%
+  Medium 63x-107x (n=20): day1 +16.7% | 3m +22.2% | 6m +30.9% | 6m vs TASI +34.9%
+  High   119x-248x (n=20): day1 +30.0% | 3m +13.4% | 6m +3.8% | 6m vs TASI +2.2%
+
+== Bought at the day-1 close instead of the offer price (median) ==
+  Low    3m +9.8% | 6m +7.6% | 1y -0.2%
+  Medium 3m +8.5% | 6m +6.5% | 1y -1.5%
+  High   3m -7.7% | 6m -11.9% | 1y -16.7%
+  All IPOs: 6m +0.7%, share above day-1 close after 6m 52% (n=60)
+
+Spearman oversubscription vs 6m return: rho=+0.02, p=0.862, n=60
+Spearman oversubscription vs 6m excess return: rho=+0.03, p=0.820, n=60
+Spearman day-1 pop vs 6m return from offer: rho=+0.51, p=0.000, n=60 (partly mechanical, the 6m return includes the day-1 pop)
+Spearman day-1 pop vs return from day-1 close to 6m: rho=+0.22, p=0.098, n=60
+Spearman oversubscription vs return from day-1 close to 6m: rho=-0.08, p=0.525, n=59
+Read these as patterns, not proof. With ~50-60 IPOs, p-values above 0.05 mean the relationship could easily be noise.
+
+== Above offer price at 6 months: 40 of 61 ==
+              n  median_oversub  median_size_sar_mln  median_day1_pop
+survivor                                                             
+Below offer  21           100.0              1015.74          0.00800
+Above offer  40            69.5              1247.00          0.29913
+
+Survivors: ACWA Power (+180%), SAL Saudi Logistics Services (+164%), Elm (+156%), Miahona (+142%), Rasan Information Technology (+100%), Saudi Tadawul Group (+99%), Al Mawarid Manpower (+90%), Dr. Sulaiman Al Habib Medical (+89%), Lumi Rental (+84%), MBC Group (+84%), Jamjoom Pharmaceuticals (+76%), Alkhorayef Water and Power Technologies (+72%), Theeb Rent a Car (+62%), Umm Al Qura for Development (Masar) (+61%), Avalon Pharma (Middle East Pharmaceutical) (+60%), Riyadh Cables Group (+53%), Arabian Drilling (+52%), Luberef (Saudi Aramco Base Oil) (+46%), Nahdi Medical (+42%), ADES Holding (+40%), Amlak International (+38%), Arabian Internet and Communications Services (solutions) (+38%), Almoosa Health (+34%), Marafiq (+32%), Tanmiah Food (+31%), Scientific and Medical Equipment House (+30%), United International Holding (Tasheel) (+29%), Al Taiseer Group TALCO (+28%), Al Masane Al Kobra Mining (AMAK) (+27%), Alamar Foods (+26%), Perfect Presentation (2P) (+23%), Almasar Alshamil Education (+14%), Sport Clubs (+9%), Arabian Contracting Services (Al Arabia) (+9%), Arabian Centres (Cenomi Centers) (+8%), Tamkeen Human Resources (+5%), Retal Urban Development (+3%), SMASCO (Saudi Manpower Solutions) (+3%), Saudi Aramco (+1%), Saudi Home Loans (SHL) (+0%)
+
+By sector (all sizes):
+                                              n above median_6m
+sector                                                         
+Commercial & Professional Svc                 3  100%     +5.0%
+Software & Services                           3  100%    +37.6%
+Consumer Services                             3  100%    +13.9%
+Energy                                        3  100%    +39.9%
+Utilities                                     4  100%   +106.9%
+Media and Entertainment                       2  100%    +46.5%
+Pharma, Biotech & Life Sciences               2  100%    +67.9%
+Insurance                                     1  100%   +100.0%
+Health Care Equipment & Svc                   4   75%    +32.2%
+Financial Services                            6   67%    +14.8%
+Transportation                                5   60%    +61.7%
+Real Estate Mgmt & Dev't                      5   60%     +3.3%
+Capital Goods                                 2   50%    +16.1%
+Materials                                     6   50%    +11.7%
+Consumer Staples Distribution & Retail        3   33%     -2.1%
+Food & Beverages                              6   17%    -14.9%
+Consumer Discretionary Distribution & Retail  3    0%    -22.7%
+
+Flags raised: 39. Review output/data_checks.csv before trusting any number above.
